@@ -29,6 +29,9 @@ Route::get('/tulis', function () {
 //route yg dipake mulai ini
 
 //route sign in - balqis
+Route::get('/sign-in', function() {
+    return view('auth.sign_in');
+});
 
 //route dashboard - balqis
 Route::get('/home', function() {
