@@ -26,7 +26,7 @@
                         <p class="text-sm text-white font-lightz px-32 pt-6">Pada perusahaan penambangan minyak terdapat divisi legal yang dapat memastikan kepatuhan terhadap semua aspek hukum yang berlaku.</p>
                     <img class="max-w-full" src="images/login-image.png">
                 </div>
-                </div>
+            </div>
                 <div class="container max-w-md bg-white shadow-xl m-auto p-10 rounded-md">
                     <!-- <div class="md:w-1/2 px-8 md:px-16"> -->
                         <h2 class="font-bold text-2xl text-black">Sign In</h2>
