@@ -71,6 +71,9 @@ Route::get('/pelaporan-hukum', function() {
 });
 
 //route privacy policy - ida
+Route::get('/privacy-policy', function() {
+    return view('Privacy-policy.privacy_policy');
+});
 
 //route status pelaporan hukum - fika
 Route::get('/status-pelaporan', function() {
