@@ -27,13 +27,13 @@
                     <img class="max-w-full" src="images/login-image.png">
                 </div>
             </div>
-                <div class="container max-w-md bg-white shadow-xl m-auto p-10 rounded-md">
+                <div class="container max-w-md bg-white shadow-xl m-auto p-10 rounded-lxl">
                     <!-- <div class="md:w-1/2 px-8 md:px-16"> -->
                         <h2 class="font-bold text-2xl text-black">Sign In</h2>
                         <p class="text-xs mt-4 text-black">If you are already a member, easily log in</p>
 
                         <form action="" class="flex flex-col gap-4">
-                            <input class="py-3 px-6 mt-8 rounded-xl border-hidden shadow-md bg-[#FFEDD3] text-black text-xs placeholder-amber-600" type="email" name="email" placeholder="Username or email address">
+                            <input class="py-3 px-6 mt-8 rounded-xl border-hidden shadow-md bg-[#FFEDD3] text-black text-xs placeholder-amber-600" type="email" name="email" placeholder="Email address">
                             <div class="relative">
                                 <input class="py-3 px-6 rounded-xl border-hidden shadow-md bg-[#FFEDD3] text-black text-xs placeholder-amber-600 w-full" type="password" name="password" placeholder="Password">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gray" class="bi bi-eye absolute top-1/2 right-3 -translate-y-1/2" viewBox="0 0 16 16">
