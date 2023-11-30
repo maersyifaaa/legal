@@ -111,8 +111,8 @@
 <form>
     <div class="grid gap-10 mb-3 md:grid-cols-2">
         <div>
-            <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Nama Pelapor</label>
-            <input type="text" id="first_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-3/4 p-2.5 dark:bg-white-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" 
+            <label for="first_name" class="block mb-2 text-sm font-medium text-black-900 dark:text-black">Nama Pelapor</label>
+            <input type="text" id="first_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-3/4 p-2.5 dark:bg-white-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" 
             placeholder="Enter Your Name" required>
             
             <label for="Divisi" class="block mb-1 text-sm font-medium text-gray-900 dark:text-black">NIP</label>
@@ -190,7 +190,7 @@
         
 
         <div>
-    <a href="/cek_status_hukum" type="submit" class="text-black bg-amber-600 focus:ring-4 focus:outline-none focus:ring-white-300 w-1/2 font-medium rounded-lg text-sm sm:w-auto px-5 py-2.5 
+    <a href="/status-pelaporan" type="submit" class="text-black bg-amber-600 focus:ring-4 focus:outline-none focus:ring-white-300 w-1/2 font-medium rounded-lg text-sm sm:w-auto px-5 py-2.5 
     text-center dark:bg-white-600 dark:hover:bg-amber-500 dark:focus:ring-black-800" >Submit
     </a>
         </div>
