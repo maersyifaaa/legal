@@ -47,7 +47,7 @@
     <img class="w-[110px] h-[55px] left-[24px] top-[45px] absolute rounded-[100px] border border-amber-600" src="images/logo.png" />
   </div>
   <div class="h-[75px] left-[273px] top-[100px] absolute">
-    <div class="w-[274px] h-[75px] left-[1px] top-0 absolute text-zinc-800 text-4xl font-extrabold font-['Poppins']">Surat Masuk</div>
+    <div class="w-[274px] h-[75px] left-[1px] top-0 absolute text-zinc-800 text-4xl font-light0 font-['Poppins']">Surat Masuk</div>
   </div>
   <div class="w-[92px] h-[50px] left-[274px] top-[633px] absolute">
     <div class="w-[92px] h-[50px] left-0 top-0 absolute bg-amber-600 rounded-lg border"></div>

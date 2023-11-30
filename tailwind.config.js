@@ -12,6 +12,11 @@ module.exports = {
         hero: "url('../public/images/bgimgjpg.jpg')",
       },
     },
+  colors: {
+      amber: {
+        600 : "D7802E"
+      },
+    },
   },
   plugins: [
     require('flowbite/plugin')

@@ -17,7 +17,7 @@
 
 
 <header>
-    <nav class="bg-gradient-to-b from-amber-600 fixed w-full z-20 top-0 start-0">
+    <nav class="bg-gradient-to-b from-amber-600 fixed w-full h-full z-20 top-0 start-0">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="images/logo.png" class="h-10">
@@ -48,16 +48,15 @@
     </nav>  
 </header>
 
-<div class="bg-gray-600 h-full w-full flex"  style="background-image: url('images/bg1.jpg')">
-    <div class="grid grid-cols-2 gap-4">
-        <div class="flex items-stretch max-h-full">
+<div class="bg-scroll h-full w-full flex"  style="background-image: url('images/bg1.jpg')">
+    <div class="grid grid-cols-2 gap-4 items-stretch max-h-full">
             <div class="w-auto self-end pt-20">
                 <p class="text-5xl text-white font-semibold px-32 pt-40">Divisi Legal</p>
                 <p class="text-xl text-white font-lightz px-32 pt-10 py-96">Pada perusahaan penambangan minyak terdapat divisi legal yang dapat memastikan kepatuhan terhadap semua aspek hukum yang berlaku.</p>
             </div>
-        </div>
     </div>
 </div>
+
 
 <!-- <section class="max-h-screen w-full bg-center bg-cover bg-gray-100 bg-blend-multiply" style="background-image: url('images/bg1.jpg')">
     <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
