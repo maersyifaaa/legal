@@ -11,7 +11,9 @@ class pelaporanHukumController extends Controller
      */
     public function index()
     {
-        //
+        $response = Http::get('https://api.aibm.my.id/hukum');
+        $pelaporanhukums = $response['data']['pelaporanhukum'];
+        return view('status_pelaporan_hukum', ['pelaporanhukum']);
     }
 
     /**
