@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Http;
+
 
 class pelaporanHukumController extends Controller
 {
@@ -13,7 +15,7 @@ class pelaporanHukumController extends Controller
     {
         $response = Http::get('https://api.aibm.my.id/hukum');
         $pelaporanhukums = $response['data']['pelaporanhukum'];
-        return view('status_pelaporan_hukum', ['pelaporanhukum']);
+        return view('status-surat.status_pelaporan_hukum', ['pelaporanhukum'=> $pelaporanhukums]);
     }
 
     /**

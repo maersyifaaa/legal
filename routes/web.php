@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\pelaporanHukumController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -76,9 +77,11 @@ Route::get('/privacy-policy', function() {
 });
 
 //route status pelaporan hukum - fika
-Route::get('/status-pelaporan', function() {
-    return view('status-surat.status_pelaporan_hukum');
-});
+// Route::get('/status-pelaporan', function() {
+//     return view('status-surat.status_pelaporan_hukum');
+// });
+
+Route::get('status-pelaporan/hukum', [pelaporanHukumController::class, 'index']);
 
 //route regulasi - fika
 Route::get('/regulasi', function() {
