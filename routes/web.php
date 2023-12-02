@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ControllerAPI;
 use App\Http\Controllers\pelaporanHukumController;
 use Illuminate\Support\Facades\Route;
 
@@ -81,7 +82,13 @@ Route::get('/privacy-policy', function() {
 //     return view('status-surat.status_pelaporan_hukum');
 // });
 
-Route::get('status-pelaporan/hukum', [pelaporanHukumController::class, 'index']);
+
+// create pelaporan-hukum ida
+Route::get('/pelaporan_hukum/hukum', [pelaporanHukumController::class, 'create'])->name('pelaporan_hukum.create');
+//store pelaporan_hukum ida
+Route::post('/pelaporan_hukum/hukum', [pelaporanHukumController::class, 'store'])->name('pelaporan_hukum.store');
+//read pelaporan_hukum fika
+Route::get('status-pelaporan/hukum', [pelaporanHukumController::class, 'index'])->name('status-pelaporan.index');
 
 //route regulasi - fika
 Route::get('/regulasi', function() {

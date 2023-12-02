@@ -108,7 +108,8 @@
             </div>
 
             
-<form>
+<form method="POST" action="{{ route('pelaporan_hukum.store') }}">
+  @csrf
     <div class="grid gap-10 mb-3 md:grid-cols-2">
         <div>
             <label for="first_name" class="block mb-2 text-sm font-medium text-black-900 dark:text-black">Nama Pelapor</label>

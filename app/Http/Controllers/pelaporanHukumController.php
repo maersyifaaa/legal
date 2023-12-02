@@ -24,6 +24,7 @@ class pelaporanHukumController extends Controller
     public function create()
     {
         //
+        return view('pelaporan-hukum.pelaporan_hukum');
     }
 
     /**
@@ -32,7 +33,17 @@ class pelaporanHukumController extends Controller
     public function store(Request $request)
     {
         //
+        $this->$response = Http::post('https://api.aibm.my.id/hukum', [
+            'nama_pelapor' =>$request->nama_pelapor,
+            'karyawan_nip'=>$request->karyawan_nip,
+            'divisi_pelapor'=>$request->divisi_pelapor,
+            'perihal_laporan'=>$request->perihal_laporan
+        ]);
+
+        // return redirect()->route('pelaporan-hukum.pelaporan_hukum');
+        return redirect()->route('status-pelaporan.index');
     }
+
 
     /**
      * Display the specified resource.
