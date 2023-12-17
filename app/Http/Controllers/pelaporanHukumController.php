@@ -14,13 +14,15 @@ class pelaporanHukumController extends Controller
     public function index()
     {
         $response = Http::get('https://api.aibm.my.id/hukum');
-        $pelaporanhukums = $response['data']['pelaporanhukum'];
-        return view('status-surat.status_pelaporan_hukum', ['pelaporanhukum'=> $pelaporanhukums]);
+       
+        $pelaporanhukums =  $response->json();
+        return view('/status-surat.status_pelaporan_hukum', ['pelaporanhukums'=>$pelaporanhukums['data'],]);
     }
 
     /**
      * Show the form for creating a new resource.
      */
+     
     public function create()
     {
         //
@@ -35,6 +37,7 @@ class pelaporanHukumController extends Controller
         //
         $this->$response = Http::post('https://api.aibm.my.id/hukum', [
             'nama_pelapor' =>$request->nama_pelapor,
+            'id_pelaporan'=>$request->id_hukum,
             'karyawan_nip'=>$request->karyawan_nip,
             'divisi_pelapor'=>$request->divisi_pelapor,
             'perihal_laporan'=>$request->perihal_laporan
