@@ -16,7 +16,7 @@ class pelaporanHukumController extends Controller
         $response = Http::get('https://api.aibm.my.id/hukum');
        
         $pelaporanhukums =  $response->json();
-        return view('/status-surat.status_pelaporan_hukum', ['pelaporanhukums'=>$pelaporanhukums['data'],]);
+        return view('/status-surat.status_pelaporan_hukum', ['pelaporanhukums'=>$pelaporanhukums['data']['pelaporanhukum'],]);
     }
 
     /**
@@ -35,15 +35,15 @@ class pelaporanHukumController extends Controller
     public function store(Request $request)
     {
         //
-        $this->$response = Http::post('https://api.aibm.my.id/hukum', [
+         Http::post('https://api.aibm.my.id/hukum', [
             'nama_pelapor' =>$request->nama_pelapor,
-            'id_pelaporan'=>$request->id_hukum,
             'karyawan_nip'=>$request->karyawan_nip,
             'divisi_pelapor'=>$request->divisi_pelapor,
-            'perihal_laporan'=>$request->perihal_laporan
+            'perihal_laporan'=>$request->perihal_laporan,
+            'tenggat' => $request->tenggat,
+            'tanggal_masuk' => date('Y-m-d'),
+            'email'=> $request->email,
         ]);
-
-        // return redirect()->route('pelaporan-hukum.pelaporan_hukum');
         return redirect()->route('status-pelaporan.index');
     }
 

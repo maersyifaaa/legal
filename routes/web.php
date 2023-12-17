@@ -92,7 +92,7 @@ Route::get('/pelaporan_hukum/hukum', [pelaporanHukumController::class, 'create']
 //store pelaporan_hukum ida
 Route::post('/pelaporan_hukum/hukum', [pelaporanHukumController::class, 'store'])->name('pelaporan_hukum.store');
 //read pelaporan_hukum fika
-Route::get('status-pelaporan/hukum', [pelaporanHukumController::class, 'index']);
+Route::get('status-pelaporan/hukum', [pelaporanHukumController::class, 'index'])->name('status-pelaporan.index');
 
 //route regulasi - fika
 Route::get('/regulasi', function() {
