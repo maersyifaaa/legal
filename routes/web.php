@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\ControllerAPI;
 use App\Http\Controllers\pelaporanHukumController;
+use App\Http\Controllers\SuratKeluarController;
+use App\Models\SuratKeluar;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -61,10 +63,12 @@ Route::get('/surat-masuk', function() {
 Route::get('/surat-keluar', function() {
     return view('surat-keluar.surat_keluar');
 });
+Route::post('/surat-keluar', [SuratKeluarController::class, 'store']);
 
 //route status surat keluar - salsha
 Route::get('/status-surat-keluar', function() {
-    return view('status-surat.status_surat_keluar');
+    $surat_keluar = SuratKeluar::all();
+    return view('status-surat.status_surat_keluar', compact('surat_keluar'));
 });
 
 //route create pelaporan hukum - ida
