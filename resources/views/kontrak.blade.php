@@ -39,7 +39,7 @@
     <div class="w-[1090px] h-[232px] left-0 top-[309px] absolute">
       <div class="w-[1090px] h-[232px] left-0 top-0 absolute rounded-[5px] border border-zinc-200"></div>
       <div class="w-[1090px] h-[70px] left-0 top-0 absolute bg-gray-50 rounded-tl-[5px] rounded-tr-[5px] border border-zinc-200"></div>
-      <div class="w-[76px] h-[25px] left-[974px] top-[182px] absolute text-right text-amber-600 text-base font-bold font-['Poppins'] leading-normal">Open</div>
+      <a href="/surat-keluar" class="w-[76px] h-[25px] left-[974px] top-[182px] absolute text-right text-amber-600 text-base font-bold font-['Poppins'] leading-normal">Open</a>
       <div class="w-[1050px] h-0.5 left-[20px] top-[158px] absolute opacity-10 bg-zinc-800"></div>
       <div class="w-[1010px] h-[42px] left-[40px] top-[92px] absolute text-zinc-500 text-xs font-semibold font-['Poppins'] capitalize leading-tight tracking-wide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet nibh quis sapien laoreet molestie. Sed faucibus dui ut fermentum maximus. Vivamus eleifend quis purus sit amet lobortis.</div>
       <div class="w-[194px] h-[25px] left-[40px] top-[23px] absolute text-amber-600 text-base font-bold font-['Poppins'] leading-normal">Surat Keluar</div>
@@ -47,7 +47,7 @@
     <div class="w-[1090px] h-[232px] left-0 top-[55px] absolute">
       <div class="w-[1090px] h-[232px] left-0 top-0 absolute rounded-[5px] border border-zinc-200"></div>
       <div class="w-[1090px] h-[70px] left-0 top-0 absolute bg-gray-50 rounded-tl-[5px] rounded-tr-[5px] border border-zinc-200"></div>
-      <div class="w-[76px] h-[25px] left-[974px] top-[182px] absolute text-right text-amber-600 text-base font-bold font-['Poppins'] leading-normal">Open</div>
+      <a href="/surat-masuk" class="w-[76px] h-[25px] left-[974px] top-[182px] absolute text-right text-amber-600 text-base font-bold font-['Poppins'] leading-normal">Open</a>
       <div class="w-[1050px] h-0.5 left-[20px] top-[158px] absolute opacity-10 bg-zinc-800"></div>
       <div class="w-[1010px] h-[42px] left-[40px] top-[92px] absolute text-zinc-500 text-xs font-semibold font-['Poppins'] capitalize leading-tight tracking-wide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet nibh quis sapien laoreet molestie. Sed faucibus dui ut fermentum maximus. Vivamus eleifend quis purus sit amet lobortis.</div>
       <div class="w-[194px] h-[25px] left-[40px] top-[23px] absolute text-amber-600 text-base font-bold font-['Poppins'] leading-normal">Surat Masuk</div>
