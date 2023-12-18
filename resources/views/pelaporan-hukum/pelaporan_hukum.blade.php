@@ -1,7 +1,5 @@
 @extends('layouts.master')
-
-@section('judul_halaman', 'status-pelaporan')
-
+@section('judul_halaman', 'Pelaporan Hukum')
 @section('konten')
     {{-- content --}}
     <div class="p-4 sm:ml-64">
@@ -10,17 +8,7 @@
                 <div class="flex py-8 h-24 rounded bg-gray-50 dark:bg-clear-400 w-1/2">
                     <p class="w-5.5 h-3.5 text-zinc-800 text-4xl font-extrabold font-['Poppins']">Pelaporan Hukum</p>
                 </div>
-
-                {{-- <div class="flex items-center justify-center h-24 rounded bg-gray-50 dark:bg-gray-800">
-         <p class="text-2xl text-gray-400 dark:text-gray-500">
-            <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
-               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16"/>
-            </svg>
-         </p>
-            </div> --}}
             </div>
-
-
             <form method="POST" action="{{ route('pelaporan_hukum.store') }}">
                 @csrf
                 <div class="grid gap-10 mb-3 md:grid-cols-2">
@@ -54,11 +42,6 @@
                         <input name="tenggat" type="date" id="tenggat"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-3/4 p-2.5 dark:bg-white-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
                             required>
-
-                        {{-- <label class="block mb-2 py-1 text-sm font-medium text-gray-900 dark:text-black" for="file_input">Upload file</label>
-            <input class="block text-sm text-gray-900 border border-white-300 rounded-lg cursor-pointer bg-white-50 dark:text-gray-500 focus:outline-none w-3/4 dark:bg-white-700 dark:border-white-600 dark:placeholder-white-400" 
-            id="file_input" type="file"> --}}
-
                     </div>
 
                     <div>
@@ -154,5 +137,4 @@
                         </button>
                     </div>
             </form>
-
         @endsection
