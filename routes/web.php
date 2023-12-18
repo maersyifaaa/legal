@@ -21,14 +21,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-//
-Route::get('/homedump', function() {
-    return view('cobahomepage');
-});
+// //
+// Route::get('/homedump', function() {
+//     return view('cobahomepage');
+// });
 
-Route::get('/tulis', function () {
-    return 'welcome';
-});
+// Route::get('/tulis', function () {
+//     return 'welcome';
+// });
 
 //route yg dipake mulai ini
 
@@ -81,20 +81,12 @@ Route::get('/privacy-policy', function() {
     return view('Privacy-policy.privacy_policy');
 });
 
-//route status pelaporan hukum - fika
-// Route::get('/status-pelaporan', function() {
-//     return view('status-surat.status_pelaporan_hukum');
-// });
-
-
-// create pelaporan-hukum ida
 Route::get('/pelaporan_hukum/hukum', [pelaporanHukumController::class, 'create'])->name('pelaporan_hukum.create');
-//store pelaporan_hukum ida
+
 Route::post('/pelaporan_hukum/hukum', [pelaporanHukumController::class, 'store'])->name('pelaporan_hukum.store');
-//read pelaporan_hukum fika
+
 Route::get('status-pelaporan/hukum', [pelaporanHukumController::class, 'index'])->name('status-pelaporan.index');
 
-//route regulasi - fika
 Route::get('/regulasi', function() {
     return view('regulasi.regulasi');
 });

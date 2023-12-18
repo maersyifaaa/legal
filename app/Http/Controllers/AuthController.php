@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash; 
 use Illuminate\Support\Str; // import library Str
 use Firebase\JWT\JWT;
+use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Session;
 
 class AuthController extends Controller
 {
